@@ -3,51 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;0,500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="/assets/style/cda-base.css" rel="stylesheet">
     <title>Lucas Cranach Digital Archive</title>
 </head>
 <body>
     <header>
-        <a href="/index.html" title="Zurück zur Tour">
-            <img src="/assets/icons/back.svg" height="25px" width="25px" alt="Zurück"> Tour
+        <a href="/index.html" title="Zurück zur Startseite">
+            <h1 class="cda-headline-1">Lucas Cranach Digital Archive</h1>
         </a>
 
-        <a href="#" title="Hilfe">
-            <img src="/assets/icons/help.svg" height="25px" width="25px" alt="Hilfe">
-        </a>
-        <a href="#" title="Einstellungen">
-            <img src="/assets/icons/settings.svg" height="25px" width="25px" alt="Einstellungen">
-        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Timeline">Timeline</a>
+                </li>
+                <li>
+                    <a href="#" title="Standorte">Standorte</a>
+                </li>
+                <li>
+                    <a href="#" title="Merkliste">Merkliste</a>
+                </li>
+                <li>
+                    <a href="#" title="Einstellungen">Einstellungen</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section id="header">
-            <p>
-                Folgende Gemälde befinden sich in Ihrer Nähe
-            </p>
-        </section>
         <section id="cards">
-            <article>
-                <img src="assets/img/kreuzigung-christi.jpg" alt="Kreuzigung Christi">
-                <h2>
-                    <a href="/lucas-cranach-archiv/kreuzigung-christi.html" title="Einzelansicht: Kreuzigung Christi">Kreuzigung Christi</a>
-                </h2>
-            </article>
-            <article>
-                <img src="assets/img/bildnis-des-johannes-cuspinian.jpg" alt="Bildnis des Johannes Cuspinian">
-                <h2>Bildnis des Johannes Cuspinian</h2>
-            </article>
-            <article>
-                <img src="assets/img/bildnis-eines-juristen.jpg" alt="Bildnes eines Juristen">
-                <h2>Bildnis eines Juristen</h2>
-            </article>
-            <article>
-                <img src="assets/img/buessender-hl-hieronymus.jpg" alt="Büssender Hl Hieronymus">
-                <h2>Büssender Hl Hieronymus</h2>
-            </article>
-            <article>
-                <img src="assets/img/bildnis-der-anna-cuspinian.jpg" alt="Bildnes der Anna Cuspinian">
-                <h2>Bildnes der Anna Cuspinian</h2>
-            </article>
+            <h2 class="cda-headline-2"><time datetime="1516-01-01 00:00">1516</time></h2>
+
+            <figure class="cda-card" id="GWN_LC_HVI-19-21_10">
+                <img src="http://lucascranach.org/imageserver/G_AT_A_DG1929-127/01_Overall/G_AT_A_DG1929-127_Overall-m.jpg" alt="Christus am Ölberg (aus der Passion Christi, Folge von 14 Holzschnitten)">
+                <figcaption>
+                    <h3 class="cda-headline-2">Christus am Ölberg</h3>
+                    <h4 class="cda-subtitle">Ayamonte, Spain</h4>
+                    <p>
+                        Druckgrafik von Lucas Cranach dem Älteren
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure class="cda-card" id="GWN_LC_HVI-19-21_11">
+                <img src="http://lucascranach.org/imageserver/G_AT_A_DG1929-129/01_Overall/G_AT_A_DG1929-129_Overall-m.jpg"
+                    alt="Gefangennahme (aus der Passion Christi, Folge von 14 Holzschnitten)">
+                <figcaption>
+                    <h3 class="cda-headline-2">Gefangennahme</h3>
+                    <h4 class="cda-subtitle">Zouerate, Mauritania</h4>
+                    <p>
+                        Druckgrafik von Lucas Cranach dem Älteren
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure class="cda-card" id="GWN_LC_HVI-19-21_13">
+                <img src="http://lucascranach.org/imageserver/G_AT_A_DG1929-131/01_Overall/G_AT_A_DG1929-131_Overall-m.jpg  "
+                    alt="Christus vor Hannas (aus der Passion Christi, Folge von 14 Holzschnitten)">
+                <figcaption>
+                    <h3 class="cda-headline-2">Christus vor Hannas (aus der Passion Christi, Folge von 14 Holzschnitten)</h3>
+                    <h4 class="cda-subtitle">Igarapé, Brazil</h4>
+                    <p>
+                        Druckgrafik von Lucas Cranach dem Älteren
+                    </p>
+                </figcaption>
+            </figure>
+
+            <figure class="cda-card" id="GWN_LC_HVI-66_89">
+                <img src="http://lucascranach.org/imageserver/G_AT_A_DG1929-82/01_Overall/G_AT_A_DG1929-82_Overall-m.jpg"
+                    alt="Hl. Stephanus">
+                <figcaption>
+                    <h3 class="cda-headline-2">Hl. Stephanus</h3>
+                    <h4 class="cda-subtitle">Everett, United States</h4>
+                    <p>
+                        Druckgrafik von Lucas Cranach dem Älteren
+                    </p>
+                </figcaption>
+            </figure>
+
         </section>
     </main>
 </body>
 </html>
+
+<!--
+    <figure class="cda-card" id="ID">
+        <img src="URL" alt="TITLE">
+        <figcaption>
+            <h3 class="cda-headline-2">TITLE</h3>
+            <h4 class="cda-subtitle">STADT, LAND</h4>
+            <p>
+                ART von Lucas Cranach dem Älteren
+            </p>
+        </figcaption>
+    </figure>
+-->
