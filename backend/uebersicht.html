@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>CDA Backend</h1>
+        <section id="data-input">
+            <h2>Dateneingabe</h2>
+            <form action="data/store.php">
+                <fieldset>
+                    <legend>Abbildung vom Gemälde</legend>
+
+                    <img src="https://dummyimage.com/640x360/fff/aaa" alt="Hochgeladenes Bild" height="360" width="640">
+                    <label for="bilddatei">Bilddatei</label>
+                    <input type="file" id="bilddatei" name="bilddatei" accept="image/png, image/jpeg">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Allgemeine Daten</legend>
+
+                    <label for="datierung">Datierung</label>
+                    <input type="text" id="datierung" name="datierung">
+
+                    <label for="eigentuemer">Eigentümer</label>
+                    <input type="text" id="eigentuemer" name="eigentuemer">
+
+                    <label for="besitzer">Besitzer</label>
+                    <input type="text" id="besitzer" name="besitzer">
+
+                    <label for="standort">Standort</label>
+                    <input type="text" id="standort" name="standort">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Allgemeine Daten</legend>
+
+                    <label for="masse">Maße</label>
+                    <textarea id="masse" name="masse"></textarea>
+
+                    <label for="kurzbeschreibung">Kurzbeschreibung</label>
+                    <textarea id="kurzbeschreibung" name="kurzbeschreibung"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Status</legend>
+
+                    <input type="radio" id="status-sichtbar" name="status" value="sichtbar" checked>
+                    <label for="status-sichtbar">sichtbar</label>
+
+
+                    <input type="radio" id="status-nicht-sichtbar" name="status" value="nicht-sichtbar">
+                    <label for="status-nicht-sichtbar">nicht sichtbar</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Zuordnung Tour</legend>
+
+                    <select name="tour" id="zuordnung-tour">
+                        <option value="staatsgaleire-im-schloss-johannisburg">Staatsgaleire im Schloss Johannisburg</option>
+                        <option value="staatsgaleire-im-schloss-johannisburg-2">Staatsgaleire im Schloss Johannisburg</option>
+                    </select>
+                </fieldset>
+
+
+                <input type="submit" value="Speichern">
+                <input type="reset" value="Gemälde löschen">
+            </form>
+        </section>
+    
+        <section id="data-table">
+            <h2>Gemäldeübersicht</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Bezeichnung</th>
+                        <th scope="col">Datierung</th>
+                        <th scope="col">Tour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Martyrium des hl. Erasmus</td>
+                        <td>1516</td>
+                        <td>Staatsgalerie im Schloss Johannisburg</td>
+                    </tr>
+                    <tr>
+                        <td>Prager Retabel [Mitteltafel, Fragment]: Hl. Margaretha</td>
+                        <td>kurz nach 1520</td>
+                        <td>Staatsgalerie im Schloss Johannisburg</td>
+                    </tr>
+                    <tr>
+                        <td>Hl. Hieronymus</td>
+                        <td>um 1520</td>
+                        <td>Staatsgalerie im Schloss Johannisburg</td>
+                    </tr>
+                    <tr>
+                        <td>Triptychon mit der Heiligen</td>
+                        <td>1509</td>
+                        <td>Frankfurt, Städel Museum</td>
+                    </tr>
+                    <tr>
+                        <td>Triptychon mit der Heiligen Sippe [Mitteltafel]</td>
+                        <td>1509</td>
+                        <td>Frankfurt, Städel Museum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

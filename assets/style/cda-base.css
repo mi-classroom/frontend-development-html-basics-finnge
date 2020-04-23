@@ -1,0 +1,102 @@
+/**
+ * Schriften
+ */
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: #f2f2f2;
+}
+
+.cda-headline-1{
+    font-weight: 500;
+    font-size: 31.5px;
+}
+
+.cda-headline-2{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.cda-headline-3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cda-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cda-daten{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.cda-caption, .cda-caption{
+    font-size: 12.5px;
+}
+
+.cda-caption-bold{
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 8px
+}
+
+/**
+ *  Cards
+ */
+.cda-card{
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.cda-card img{
+    width: 100px;
+}
+
+/**
+ * Layout
+ */
+body{
+    display: grid;
+    grid-template-columns: [edge-left] 50px [col1-left] auto [col1-right] 40px [col2-left] auto [col2-right] 40px [col3-left] auto [col3-right] 40px [col4-left] auto [col4-right] 40px [col5-left] auto [col5-right] 40px [col6-left] auto [col6-right] 50px [edge-left];
+}
+
+header{
+    position:fixed;
+    background-color: #FFCC00;
+    width: 100vw;
+}
+
+header a{
+    color: #000;
+    text-decoration: none
+}
+
+main{
+    grid-column: col1-left / col6-left;
+}
+
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+
+
+#cards li:nth-child(odd){
+    grid-column: 1 / 2;
+}
+
+#cards li:nth-child(even) {
+    grid-column: 3 / 4;
+}
