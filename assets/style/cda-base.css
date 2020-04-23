@@ -86,15 +86,17 @@ main{
 main ul{
     list-style: none;
     display: grid;
-    grid-template-columns: [col1-left] auto [col1-right] 40px [col2-left] auto [col2-right] 40px [col3-left] auto [col3-right] 40px [col4-left] auto [col4-right] 40px [col5-left] auto [col5-right] 40px [col6-left] auto [col6-right];
+    grid-template-columns: 1fr 40px 1fr;
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 
 
 #cards li:nth-child(odd){
-    grid-column: col1-left / col3-right;
+    grid-column: 1 / 2;
 }
 
 #cards li:nth-child(even) {
-    grid-column: col4-left / col6-right;
+    grid-column: 3 / 4;
 }
