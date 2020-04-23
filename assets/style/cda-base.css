@@ -12,24 +12,28 @@ body{
 .cda-headline-1{
     font-weight: 500;
     font-size: 31.5px;
+    line-height: 120%;
 }
 
 .cda-headline-2{
     font-weight: 500;
     font-size: 25px;
     margin-bottom: 10px;
+    line-height: 120%;
 }
 
 .cda-headline-3{
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
+    line-height: 120%;
 }
 
 .cda-subtitle{
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 5px;
+    line-height: 120%;
 }
 
 .cda-daten{
@@ -54,10 +58,13 @@ p{
 .cda-card{
     padding: 10px 20px;
     background-color: #fff;
+    display: flex;
+    flex-direction: row;
 }
 
 .cda-card img{
     width: 100px;
+    margin: -10px 16px -10px -20px;
 }
 
 /**
