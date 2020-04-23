@@ -1,0 +1,61 @@
+/**
+ * Schriften
+ */
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: #f2f2f2;
+}
+
+.cda-headline-1{
+    font-weight: 500;
+    font-size: 31.5px;
+}
+
+.cda-headline-2{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.cda-headline-3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cda-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cda-daten{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.cda-caption, .cda-caption{
+    font-size: 12.5px;
+}
+
+.cda-caption-bold{
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 8px
+}
+
+/**
+ *  Cards
+ */
+.cda-card{
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.cda-card img{
+    width: 100px;
+}
