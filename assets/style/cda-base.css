@@ -59,3 +59,42 @@ p{
 .cda-card img{
     width: 100px;
 }
+
+/**
+ * Layout
+ */
+body{
+    display: grid;
+    grid-template-columns: [edge-left] 50px [col1-left] auto [col1-right] 40px [col2-left] auto [col2-right] 40px [col3-left] auto [col3-right] 40px [col4-left] auto [col4-right] 40px [col5-left] auto [col5-right] 40px [col6-left] auto [col6-right] 50px [edge-left];
+}
+
+header{
+    position:fixed;
+    background-color: #FFCC00;
+    width: 100vw;
+}
+
+header a{
+    color: #000;
+    text-decoration: none
+}
+
+main{
+    grid-column: col1-left / col6-left;
+}
+
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: [col1-left] auto [col1-right] 40px [col2-left] auto [col2-right] 40px [col3-left] auto [col3-right] 40px [col4-left] auto [col4-right] 40px [col5-left] auto [col5-right] 40px [col6-left] auto [col6-right];
+}
+
+
+
+#cards li:nth-child(odd){
+    grid-column: col1-left / col3-right;
+}
+
+#cards li:nth-child(even) {
+    grid-column: col4-left / col6-right;
+}
